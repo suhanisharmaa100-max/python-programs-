@@ -1,6 +1,8 @@
-#write a program that asks for your name and age , then prints: 'Hello[name], you will turn [age+1] next year!'
-name = input( "Enter your name: " )
-age = int(input("Enter your age: "))
-print(f"Hello {name}, you will turn {age + 1} next year!")
-
- 
+#write an if-else program to check if a number entered by the user is positive, negavtive, or zero.
+num = float(input("enter your number: "))
+if num > 1:
+    print (" number is positive")
+elif num == 0:
+    print("number is zero")
+else:
+    print ("number is negative ")

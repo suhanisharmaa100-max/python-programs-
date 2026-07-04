@@ -1,3 +1,6 @@
-#convert the string '42' to an integer and multiply it by 3. Print the result.
-number = int ('42')
-print (42 * 3)
+#Write a program that prints numbers 1-20 but skips multiples of 3(use continue).
+for number in range(1, 21):
+    if number % 3 == 0:
+        continue
+
+    print(number)

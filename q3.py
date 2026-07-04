@@ -1,4 +1,12 @@
-# Ask the user fpr their first name and last name, then printtheir full name using an f-string.
-first_name = input( "enter your first name: ")
-last_name = input( "enter your last name: ")
-print(f'your full name is {first_name}{last_name}')
+#Using a while loop, keep asking the user for a number until they enter 0. print the sum of all numbers entered.
+total = 0
+
+while True:
+    number = float(input("Enter a number (0 to stop): "))
+
+    if number == 0:
+        break
+
+    total += number
+
+print("Sum of all numbers:", total)
