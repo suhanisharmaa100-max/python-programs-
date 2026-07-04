@@ -1,11 +1,6 @@
-#Write a login check using nested if statement: first check if the username matches "admin", and only if it does, check if the password matches "1234". Print "Access granted", "Wrong password", or "Unknown user" accordingly.
-username = input("Enter username: ")
-password = input("Enter password: ")
+#Write a function print_profile(**details) that prints each key-value pair it receives, one per line. Call it like print_profile(name+"John", age+20, city+"Dehli").
+def print_profile(**details):
+    for key, value in details.items():
+        print(f"{key}: {value}")
 
-if username == "admin":
-    if password == "1234":
-        print("Access granted")
-    else:
-        print("Wrong password")
-else:
-    print("Unknown user")
+print_profile(name="John", age=20, city="Delhi")

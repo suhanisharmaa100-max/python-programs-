@@ -1,12 +1,7 @@
-#Using a while loop, keep asking the user for a number until they enter 0. print the sum of all numbers entered.
-total = 0
+#Write a fucntion celsius_to_fahrenheit(c) and call it for 0'C, 100'C, and 37'C.
+def celsius_to_fahrenheit(c):
+    return (c * 9 / 5) + 32
 
-while True:
-    number = float(input("Enter a number (0 to stop): "))
-
-    if number == 0:
-        break
-
-    total += number
-
-print("Sum of all numbers:", total)
+print(celsius_to_fahrenheit(0))    # 32.0°F
+print(celsius_to_fahrenheit(100))  # 212.0°F
+print(celsius_to_fahrenheit(37))   # 98.6°F
